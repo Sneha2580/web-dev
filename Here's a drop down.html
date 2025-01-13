@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Favorite Fruits</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <fieldset>
+        <legend><b>Enter Your Favorite Fruits</b></legend>
+        <form action="/action_page.php"
+            oninput="x.value=(parseInt(fruit1.value)+parseInt(fruit2.value)+parseInt(fruit3.value))/3">
+            <label>Name</label><br>
+            <input type="text" id="name"><br><br>
+            <label>Enter Quantity</label><br>
+            <select name="Fruit1" id="fruit1">
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Orange">Orange</option>
+            </select>
+            <input type="number" id="fruit1" name="fruit1"><br><br>
+            <select name="Fruit2" id="fruit2">
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Orange">Orange</option>
+            </select>
+            <input type="number" id="fruit2" name="fruit2"><br><br>
+            <select name="Fruit3" id="fruit3">
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Orange">Orange</option>
+            </select>
+            <input type="number" id="fruit3" name="fruit3"><br><br>
+            Average Quantity: <output name="x" for="fruit1 fruit2 fruit3"></output>
+        </form>
+    </fieldset>
+</body>
+
+</html>
